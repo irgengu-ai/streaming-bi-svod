@@ -10,7 +10,7 @@ This project was completed as part of the Open Avenues Foundation Build Fellowsh
 
 ## Business Objective
 
-The objective of this project is to identify strategic opportunities for Netflix based on its content portfolio and its competitive position.
+The objective of this project is to identify strategic opportunities for Netflix based on its content portfolio and competitive position.
 
 The analysis addresses the following questions:
 
@@ -39,7 +39,7 @@ The datasets contain information including:
 
 The raw datasets were cleaned and standardized before analysis. Key numeric fields were converted into appropriate formats, and records with missing essential fields were handled during the cleaning process.
 
-Both raw and cleaned datasets are organized in the `Data/` folder.
+The cleaned datasets used for analysis are included in the `Data/` folder.
 
 ## Methodology
 
@@ -59,15 +59,15 @@ Python and Pandas were used for data preparation and analysis. Matplotlib was us
 - Netflix emphasizes high content volume and broad genre coverage.
 - Disney+ has a stronger concentration in franchise-driven and family-oriented content.
 - Netflix's large catalog does not always produce the strongest average audience ratings.
-- Netflix could benefit from placing greater emphasis on high-quality original content rather than maximizing content quantity alone.
+- Netflix could benefit from placing greater emphasis on high-quality content rather than maximizing content quantity alone.
 
 ## Strategic Recommendation
 
-Netflix should reduce its emphasis on content volume and invest more selectively in high-quality original productions.
+Netflix should reduce its emphasis on catalog expansion and invest more selectively in higher-quality future titles.
 
 This recommendation is supported by the platform comparison, which indicates that Netflix has a large catalog but does not consistently achieve the strongest average ratings compared with selected competitors.
 
-A stronger focus on original-content quality could:
+A stronger focus on content quality could:
 
 - Improve audience satisfaction
 - Increase content engagement
@@ -79,10 +79,10 @@ A stronger focus on original-content quality could:
 
 | Metric | Expected Impact |
 |---|---|
-| Content engagement | Users spend more time watching high-quality content |
-| Retention rate | Satisfied subscribers are more likely to remain subscribed |
+| Content engagement | Users may spend more time watching higher-quality content |
+| Retention rate | Satisfied subscribers may be more likely to remain subscribed |
 | Churn rate | Improved content quality may reduce cancellations |
-| Brand differentiation | Strong original titles improve Netflix's competitive identity |
+| Brand differentiation | A stronger portfolio of high-quality content can improve Netflix's competitive identity |
 | Revenue | Higher retention may support recurring subscription revenue |
 
 The expected impact is directional and should not be interpreted as a guaranteed financial forecast.
@@ -104,7 +104,7 @@ streaming-bi-svod/
 
 | Folder or File | Description |
 |---|---|
-| `Data/` | Raw and cleaned streaming datasets |
+| `Data/` | Cleaned streaming datasets used for analysis |
 | `notebooks/` | Jupyter notebooks used for cleaning and analysis |
 | `figures/` | Exported charts and visualizations |
 | `presentation/` | Final presentation files |
