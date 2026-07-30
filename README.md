@@ -2,32 +2,32 @@
 
 ## Project Overview
 
-This project analyzes the content strategies of major streaming video-on-demand platforms, including Netflix, Hulu, Prime Video, and Disney+.
+This project compares the content libraries of Netflix, Hulu, Prime Video, and Disney+.
 
-The analysis combines movie and TV-show datasets to compare platform content volume, genre distribution, release-year patterns, IMDb ratings, and Rotten Tomatoes scores. Netflix was selected for the final platform-level strategic analysis.
+I used movie and TV-show datasets to look at content volume, genre distribution, release years, IMDb ratings, and Rotten Tomatoes scores. After comparing the four platforms, I selected Netflix for the final strategy analysis.
 
 This project was completed as part of the Open Avenues Foundation Build Fellowship.
 
 ## Business Objective
 
-The objective of this project is to identify strategic opportunities for Netflix based on its content portfolio and competitive position.
+The main goal of this project is to identify a realistic strategic opportunity for Netflix based on its current content library and its position against other streaming platforms.
 
-The analysis addresses the following questions:
+The analysis focuses on the following questions:
 
-- How does Netflix's content library compare with competing platforms?
-- Which genres and content types dominate each platform?
-- How does Netflix perform based on IMDb ratings and Rotten Tomatoes scores?
-- What strategic action could improve Netflix's competitive position?
-- Which business metrics could be affected by the recommendation?
+- How large is Netflix's content library compared with its competitors?
+- What types of content and genres are most common on each platform?
+- How does Netflix compare based on IMDb ratings and Rotten Tomatoes scores?
+- Where does Netflix have a clear weakness or opportunity?
+- What business results could be affected by the recommendation?
 
 ## Dataset
 
-The project uses two publicly available datasets:
+The project uses two public datasets:
 
 - Movies on Streaming Platforms
 - TV Shows on Streaming Platforms
 
-The datasets contain information including:
+The datasets include information such as:
 
 - Title
 - Release year
@@ -37,70 +37,71 @@ The datasets contain information including:
 - Platform availability
 - Movie or TV-show classification
 
-The raw datasets were cleaned and standardized before analysis. Key numeric fields were converted into appropriate formats, and records with missing essential fields were handled during the cleaning process.
+Before starting the analysis, I cleaned and standardized the datasets. Numeric columns were converted into usable formats, and records with missing important values were handled during the cleaning process.
 
-The cleaned datasets used for analysis are included in the `data/` folder.
+The cleaned datasets are stored in the `data/` folder.
 
 ## Methodology
 
-The project follows five main stages:
+The project was completed in five stages:
 
 1. Data exploration
 2. Data cleaning and preparation
-3. Industry-level exploratory data analysis
-4. Streaming-platform comparison
-5. Netflix strategic analysis and recommendation
+3. Industry-level exploratory analysis
+4. Cross-platform comparison
+5. Netflix strategy analysis
 
-Python and Pandas were used for data preparation and analysis. Matplotlib was used to create the visualizations.
+Python and Pandas were used for data preparation and analysis. Matplotlib was used to create the charts.
 
 ## Key Findings
 
-- Netflix has one of the largest content libraries among the platforms in the dataset.
-- Movies make up approximately two-thirds of Netflix's catalog.
-- Netflix emphasizes high content volume and broad genre coverage.
-- Disney+ has a stronger concentration in franchise-driven and family-oriented content.
-- Netflix's average movie Rotten Tomatoes score is 54.4, below Hulu at 60.4 and Disney+ at 58.3.
-- Netflix's average TV-show Rotten Tomatoes score is 53.6, which remains competitive in the platform comparison.
-- Netflix could benefit from placing greater emphasis on high-quality future movie releases rather than maximizing movie quantity alone.
+- Netflix has one of the largest content libraries in the dataset.
+- Movies make up about two-thirds of Netflix's catalog.
+- Netflix has a broad range of genres and a strong concentration of newer titles.
+- Disney+ has a smaller catalog with a stronger focus on family and franchise content.
+- Netflix's average movie Rotten Tomatoes score is 54.4.
+- This is lower than Hulu's score of 60.4 and Disney+'s score of 58.3.
+- Netflix's average TV-show Rotten Tomatoes score is 53.6, which is still competitive in this comparison.
+- The results suggest that Netflix's main issue is not the size of its movie catalog, but the average quality of its movies.
 
 ## Strategic Recommendation
 
-Netflix should reduce its emphasis on expanding its movie catalog and invest more selectively in higher-quality future movie releases.
+Netflix should put less emphasis on adding more movies and more emphasis on improving the quality of future movie releases.
 
-This recommendation is supported by the platform comparison, which indicates that Netflix already has a large movie catalog but achieves a lower average movie Rotten Tomatoes score than Hulu and Disney+.
+The data shows that Netflix already has a large movie catalog. However, its average movie Rotten Tomatoes score is lower than Hulu's and Disney+'s.
 
-A stronger focus on future movie quality could:
+Because of this, simply adding more movies may not create a stronger advantage. A better approach would be to invest more selectively in future movies with stronger quality potential.
+
+This could help Netflix:
 
 - Improve audience satisfaction
 - Increase content engagement
-- Strengthen platform differentiation
+- Strengthen its competitive position
 - Reduce subscriber churn
 - Support long-term subscriber retention
 
 ## Expected Business Impact
 
-| Metric | Expected Impact |
+| Metric | Possible Impact |
 |---|---|
 | Content engagement | Users may spend more time watching higher-quality content |
-| Retention rate | Satisfied subscribers may be more likely to remain subscribed |
-| Churn rate | Improved content quality may reduce cancellations |
-| Brand differentiation | A stronger portfolio of high-quality content may reinforce Netflix's competitive identity |
-| Revenue | Higher subscriber retention may protect recurring subscription revenue |
+| Retention rate | Satisfied users may be more likely to keep their subscriptions |
+| Churn rate | Better content may reduce cancellations |
+| Brand differentiation | Stronger movies may help Netflix stand out from competitors |
+| Revenue | Higher retention may help protect subscription revenue |
 
 ### Illustrative Revenue Scenario
 
-Based on Netflix's 2021 average paying memberships and average monthly revenue per paying membership, retaining an additional 1% of paying memberships could represent approximately 2.1 million memberships.
-
-The scenario calculation is:
+To show the possible financial importance of retention, I created a simple scenario using Netflix's 2021 figures.
 
 - Average paying memberships: 210.8 million
 - Illustrative retained-membership scenario: 1%
-- Additional paying memberships retained: approximately 2.1 million
+- Additional paying memberships retained: about 2.1 million
 - Average monthly revenue per paying membership: $11.67
 - Annual revenue per paying membership: $140.04
-- Estimated annual streaming revenue protected: approximately $295 million
+- Estimated annual streaming revenue protected: about $295 million
 
-This is an illustrative scenario-based estimate, not a guaranteed financial forecast.
+This is only an illustrative estimate. It is not a financial forecast.
 
 **Source:** Netflix 2021 Annual Report.
 
@@ -122,13 +123,13 @@ streaming-bi-svod/
 
 | Folder or File | Description |
 |---|---|
-| `data/` | Cleaned streaming datasets used for analysis |
-| `notebooks/` | Jupyter notebooks used for data cleaning and analysis |
-| `figures/` | Exported charts and visualizations |
-| `presentation/` | Final presentation files |
+| `data/` | Cleaned datasets used in the analysis |
+| `notebooks/` | Jupyter notebooks for data cleaning and analysis |
+| `figures/` | Charts created during the project |
+| `presentation/` | Final PowerPoint presentation |
 | `src/` | Reusable Python scripts and helper functions |
-| `requirements.txt` | Python package requirements |
-| `README.md` | Project overview and documentation |
+| `requirements.txt` | Required Python packages |
+| `README.md` | Project overview and instructions |
 
 ## Tools Used
 
@@ -174,9 +175,9 @@ pip install -r requirements.txt
 python -m notebook
 ```
 
-### 6. Open the notebooks and run them in numerical order
+### 6. Run the notebooks
 
-Run the notebooks from the data-exploration stage through the final product and strategic analysis.
+Open the notebooks and run them in numerical order, starting with data exploration and ending with the final strategy analysis.
 
 ## Author
 
